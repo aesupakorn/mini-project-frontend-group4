@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Readex+Pro&display=swap');
+
+@keyframes flying {
+     0%{
+        transform: translate(0px,0px);
+    }
+    20%{
+        transform: translate(800px,0px);
+    }
+    40%{
+        transform: translate(100px,300px);
+    }
+    60%{
+        transform: translate(600px,400px);
+    }
+    80%{
+        transform: translate(1000px,100px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    } 
+    
+}
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Comfortaa;
+}
+body {
+	font-size: 125%;
+    padding: 30px;
+	background: linear-gradient(to right, #187ffd, #71b1ff, #8abdfc);
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 30vh;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+
+}
+h1,
+h2 {
+	color: white;
+	
+}
+h1 {
+	margin-bottom: 30px;
+}
+svg {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.container {
+    position: relative;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.container-room {
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-evenly;
+	
+}
+
+.room {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 5px 0px,
+		rgba(0, 0, 0, 0.15) 0px 2px 6px 2px;
+	padding: 20px;
+	border-radius: 15px;
+	outline: 4px solid #3eb95bce;
+	outline-offset: -10px;
+	
+	height: 50vh;
+	background-color: #cdfcd8;
+    font-weight: 700;
+    flex-basis:450px ;
+    
+}
+.busy {
+	outline: 4px solid #fc536f;
+	background-color: #fcd0d0;
+}
+
+img {
+	width: 50%;
+}
