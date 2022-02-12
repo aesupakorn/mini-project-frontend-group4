@@ -47,19 +47,18 @@ let num3 = 0
 
 let counter = 0 
 
-setInterval(() => {
-    if(counter===0){
-        counter = 1
-        statusTime1= false
-    }
-    else{
-        counter = 0
-        statusTime1= true
-    }
+// setInterval(() => {
+//     if(counter===0){
+//         counter = 1
+//         statusTime1= false
+//     }
+//     else{
+//         counter = 0
+//         statusTime1= true
+//     }
     
-}, 5000);
+// }, 5000);
  
-
 
 
 setInterval(() => {
@@ -100,4 +99,39 @@ setInterval(() => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+room1.childNodes[0].addEventListener('click',()=>{
+    setTimeout(() => {
+        room1.classList.remove('spinning')
+    }, 1000);
+    room1.classList.add('spinning')
+    
+})
+room2.childNodes[0].addEventListener('click',()=>{
+    setTimeout(() => {
+        room2.classList.remove('spinning')
+    }, 1000);
+    room2.classList.add('spinning')
+    
+})
+room3.childNodes[0].addEventListener('click',()=>{
+    setTimeout(() => {
+        room3.classList.remove('spinning')
+    }, 1000);
+    room3.classList.add('spinning')
+    
+})
 
